@@ -9,7 +9,6 @@ public class Frequentie
     void checkDeTekst(String s)
     {
         String[] mijnArray = s.split(" ");
-        int y = 0;
         for (String value : mijnArray) {
             int count = 0;
             for (String item : mijnArray) {
