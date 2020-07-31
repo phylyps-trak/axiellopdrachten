@@ -10,17 +10,14 @@ public class Frequentie
     {
         String[] mijnArray = s.split(" ");
         int y = 0;
-        for (int p = 0; p<mijnArray.length;p++)
-        {
+        for (String value : mijnArray) {
             int count = 0;
-            for (int i = 0; i < mijnArray.length; i++)
-            {
-                if ((mijnArray[i]).equalsIgnoreCase(mijnArray[p]))
-                {
+            for (String item : mijnArray) {
+                if (item.equalsIgnoreCase(value)) {
                     count++;
                 }
             }
-        tekstEnVoorkomst.put(mijnArray[p], (+ count));
+            tekstEnVoorkomst.put(value, (+count));
         }
         for (String i : tekstEnVoorkomst.keySet())
             {
